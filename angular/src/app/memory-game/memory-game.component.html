@@ -1,0 +1,12 @@
+<div class="p-16">
+    <div class="back"></div>
+    <div class="achivment">
+        Lives: <span id="lives"></span><br>
+        Time: <span id="time">0 min 0 sec</span><br>
+        <div style="display: none;">Tries: <span id="tries"></span></div>
+    </div>
+    <div class="grid p-16">
+        <app-game-card-component *ngFor="let c of cards; let idx=index" [data]="c" (cardClicked)="cardClicked(idx)">
+        </app-game-card-component>
+    </div>
+</div>

@@ -1,0 +1,56 @@
+/* You can add global styles to this file, and also import other style files */
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+@import '~@fortawesome/fontawesome-free/scss/fontawesome.scss';
+@import '~@fortawesome/fontawesome-free/scss/solid.scss';
+@import '~@fortawesome/fontawesome-free/scss/regular.scss';
+@import '~@fortawesome/fontawesome-free/scss/brands.scss';
+ 
+@import '~mdb-angular-ui-kit/assets/scss/mdb.scss';
+@import '~ngx-owl-carousel-o/lib/styles/scss/owl.carousel';
+@import '~ngx-owl-carousel-o/lib/styles/scss/owl.theme.default';
+
+.snackbar {
+    background-color: limegreen;
+    transform: scale(3);
+}
+
+.snackbar-error {
+    background-color: darkred;
+    transform: scale(3);
+    color: white;
+}
+
+.snackbar-error .mat-simple-snackbar-action  {
+    color: white;
+  }
+
+.snackbar .mat-simple-snackbar-action  {
+    color: white;
+  }
+
+  .owl-theme .owl-nav [class*="owl-"] {
+    color: #FFF;
+    font-size: 20px !important;
+    margin: 10px !important;
+    padding: 4px 10px;
+    transform: scale(1.7);
+    background: #3f51b5 !important;
+    display: inline-block;
+    cursor: pointer;
+    border-radius: 3px;
+}
+
+.owl-theme .owl-nav .disabled {
+  opacity: 0;
+  cursor: default;
+}
+
+.owl-carousel .owl-stage-outer {
+  position: relative;
+  overflow: hidden;
+  border: #3f51b5;
+  border-style: solid !important;
+  border-radius: 20px !important;
+}

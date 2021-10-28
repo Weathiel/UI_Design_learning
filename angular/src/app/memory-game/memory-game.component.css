@@ -1,0 +1,37 @@
+.grid {
+    display: grid;
+    grid-template-columns: repeat(5, 150px);
+    gap: 16px;
+
+    justify-content: center;
+}
+
+@media (max-width: 600px) {
+    .grid {
+        grid-template-columns: repeat(2, 150px);
+    }
+}
+
+.achivment{
+    position: relative;
+    left: 10px;
+    top: 10px;
+    font-size: x-large;
+    font-weight: bold;
+    color: white;
+}
+
+.back {
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    background-image: url("../../assets/game-back.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    -webkit-filter: blur(3px);
+    filter: blur(3px);
+    opacity: 0.9;
+    z-index: -2;
+}

@@ -1,0 +1,64 @@
+<div style="text-align: center;" class="allDiv">
+    <div class="allDivBack"></div>
+    <mat-accordion class="example-headers-align">
+
+        <mat-expansion-panel [expanded]="step === 0" (opened)="setStep(0)" hideToggle>
+            <mat-expansion-panel-header>
+                <mat-panel-title>
+                    Lorem ipsum
+                </mat-panel-title>
+            </mat-expansion-panel-header>
+            <h1 class="headline">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus vel tellus erat. Nulla
+                interdum
+                lorem
+                vitae
+                libero
+                cursus blandit. Vivamus tempor sodales tortor sed aliquet. Quisque euismod auctor dapibus. Morbi congue
+                vestibulum
+                libero, auctor posuere purus volutpat vitae. Vivamus laoreet egestas ante, non luctus quam volutpat at.
+                Aenean
+                aliquam
+                felis vel massa iaculis dapibus.</h1>
+        </mat-expansion-panel>
+
+        <mat-expansion-panel [expanded]="step === 1" (opened)="setStep(1)" hideToggle>
+            <mat-expansion-panel-header>
+                <mat-panel-title>
+                    Nam placerat
+                </mat-panel-title>
+            </mat-expansion-panel-header>
+            <h1 class="headline">Nam placerat, nisl eget tempor ullamcorper, leo nisl ultricies mi, vitae placerat nulla
+                dolor
+                lobortis justo.
+            </h1>
+        </mat-expansion-panel>
+
+        <div class="carousel-wrap">
+            <owl-carousel-o [options]="customOptions" class="owl-carousel-o owl-theme owl-loaded owl-drag">
+                <ng-template carouselSlide class="carousel">
+                    <div class="item">
+                        <img src="../../assets/library_1.jpg" alt="img 1">
+                    </div>
+                </ng-template>
+                <ng-template carouselSlide class="carousel">
+                    <div class="item">
+                        <img src="../../assets/library_2.jpg" alt="img 2">
+                    </div>
+                </ng-template>
+                <ng-template carouselSlide class="carousel">
+                    <div class="item">
+                        <img src="../../assets/library_3.jpg" alt="img 3">
+                    </div>
+                </ng-template>
+                <div style="background-color: green;">
+                    <button class="owl-prev" style="background-color: blue;">
+                        <div class="nav-btn prev-slide"></div>
+                    </button>
+                    <button class="owl-next">
+                        <div class="nav-btn next-slide"></div>
+                    </button>
+                </div>
+            </owl-carousel-o>
+        </div>
+    </mat-accordion>
+</div>

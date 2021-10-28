@@ -1,0 +1,78 @@
+
+.mat-expansion-panel-header{
+    color: black !important; 
+}
+
+.mat-expansion-panel-header:hover, .mat-expansion-panel-header.mat-expanded{
+    background: #3f51b5 !important;
+}
+
+.mat-expansion-panel-header:hover .mat-expansion-panel-header-title, .mat-expansion-panel-header.mat-expanded .mat-expansion-panel-header-title{
+    color: white !important; 
+}
+
+.mat-expansion-panel-content {
+    display: flex;
+    background-color: white;
+}
+
+.owl-carousel .nav-btn {
+    height: 50px;
+    position: absolute;
+    width: 37px;
+    cursor: pointer;
+    top: 100px !important;
+}
+
+.owl-theme .owl-nav{margin-top:10px}
+.myNav{
+    color:#FFF;
+    font-size:50px !important;
+    margin:5px !important;
+    padding:4px 7px;
+    background:green !important;
+    display:inline-block;
+    cursor:pointer;
+    border-radius:3px;
+    transform: scale(2);
+}
+
+.owl-carousel .next-slide {
+    background: url(../../assets/nav-icon.png) no-repeat scroll -24px 0px;
+    right: -33px;
+}
+
+.owl-carousel .prev-slide {
+    background: url(../../assets/nav-icon.png) no-repeat scroll 0 0;
+    left: -33px;
+}
+
+.carousel-wrap{
+    width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 10px;
+    padding-top: 10px;
+}
+
+.allDiv{
+    margin-bottom: 16px;
+    margin-top: 10px;
+}
+
+.allDivBack{
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 101%;
+    height: 100%;
+    padding-left: 5px;
+    padding-right: 5px;
+    background: url(../../assets/library_background.jpg) no-repeat;
+    background-size: cover;
+    -webkit-filter: blur(2px);
+    filter: blur(2px);
+    opacity: 0.9;
+    z-index: -2;
+}
+

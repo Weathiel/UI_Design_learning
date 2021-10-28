@@ -1,0 +1,18 @@
+header {
+    position: sticky;
+    position: -webkit-sticky; /* For macOS/iOS Safari */
+    top: 0; /* Sets the sticky toolbar to be on top */
+    z-index: 1000; /* Ensure that your app's content doesn't overlap the toolbar */
+}
+
+.logo{
+    background-image: url("../../assets/logo.png");
+    background-size: cover;
+    height: 100%;
+    width: 115px;
+    margin-left: 20px;
+    margin-bottom: 5px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: transparent;
+}

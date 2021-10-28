@@ -1,0 +1,55 @@
+  .app-header {
+      position: sticky;
+      position: -webkit-sticky; /* For macOS/iOS Safari */
+      top: 0; /* Sets the sticky toolbar to be on top */
+      z-index: 1000; /* Ensure that your app's content doesn't overlap the toolbar */
+  }
+
+  .sw-sidenav{
+      border-radius: 2px;
+      border-color: transparent;
+      width: 10%;
+      background-color: #3f51b5;
+      color: white;
+    }
+
+    .sidenav-mat-list-item{
+      color: white;
+    }
+
+  .footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 5%;
+    text-align: center;
+  }
+
+  .sidenav-content {
+    display: flex;
+    flex-flow: column;
+  }
+
+  .sidenav {
+    height: 100%;
+  }
+
+  app-footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+  }
+
+  mat-sidenav-content{
+    min-height: 100vh;
+    overflow-y: hidden;
+  }
+
+  .router{
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+
+  .over{
+    overflow-y: hidden;
+  }

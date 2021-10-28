@@ -1,0 +1,58 @@
+<div class="dis" mat-dialog-title>
+  <h1 id="title" class="title">{{htmlTitle}}</h1>
+  <a class="close" (click)="closeDialog()">X</a>
+</div>
+
+
+<div mat-dialog-content>
+  <mat-list>
+    <form [formGroup]="form">
+      <mat-list-item>
+        <mat-label>Genre</mat-label>
+      </mat-list-item>
+      <mat-list-item><input type="text" placeholder="Submit genre..." [(ngModel)]="book.genre" formControlName="genre"
+          id="genre"><br>
+        <div style="margin-left: 20px; color: red;" *ngIf="genreError != ''">{{genreError}}</div>
+      </mat-list-item>
+
+      <mat-list-item>
+        <mat-label>Title</mat-label>
+      </mat-list-item>
+      <mat-list-item><input type="text" placeholder="Submit title..." [(ngModel)]="book.title" formControlName="title"
+          id='title1'>
+        <div style="margin-left: 20px; color: red;" *ngIf="titleError != ''">{{titleError}}</div>
+      </mat-list-item>
+
+      <mat-list-item>
+        <mat-label>Author</mat-label>
+      </mat-list-item>
+      <mat-list-item><input type="text" placeholder="Submit author..." [(ngModel)]="book.author"
+          formControlName="author" id='author' minlength="2" required>
+        <div style="margin-left: 20px; color: red;" *ngIf="authorError != ''">{{authorError}}</div>
+      </mat-list-item>
+
+      <mat-list-item>
+        <mat-label>Publisher</mat-label>
+      </mat-list-item>
+      <mat-list-item><input type="text" placeholder="Submit publisher..." [(ngModel)]="book.publisher"
+          formControlName="publisher" id='publisher' minlength="2" required>
+        <div style="margin-left: 20px; color: red;" *ngIf="publisherError != ''">{{publisherError}}</div>
+      </mat-list-item>
+    </form>
+    <mat-list-item>
+      <mat-label>Age recommendation:</mat-label>
+    </mat-list-item>
+
+    <mat-list-item>
+      <select matSelect id="select" type="text" (change)="ageRangeChange($event)" [(ngModel)]="book.ageRange">
+        <option *ngFor="let type of stateTypes" [value]='type'>
+          {{type}}
+        </option>
+      </select>
+      <div style="margin-left: 20px; color: red;" *ngIf="ageRangeError != ''">{{ageRangeError}}</div>
+    </mat-list-item>
+  </mat-list>
+</div>
+<div mat-dialog-actions>
+  <button mat-button (click)="onClick()">Submit</button>
+</div>
